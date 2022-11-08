@@ -10,7 +10,7 @@ def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
 
 
-version = '0.7dev'
+version = '0.7'
 
 long_description = (
         'Detailed Documentation\n'
@@ -35,9 +35,8 @@ tests_require = ['zope.testing', 'manuel']
 
 setup(name='plone.recipe.filestorage',
       version=version,
-      description="This recipe aids the creation and management of multiple Zope 2 filestorages.",
+      description="This recipe aids the creation and management of multiple Zope 5 filestorages.",
       long_description=long_description,
-      # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
           'Framework :: Buildout',
           'Framework :: Zope5',
@@ -51,6 +50,7 @@ setup(name='plone.recipe.filestorage',
       author='Albert Ormazabal',
       author_email='aormazabal@tda.ad',
       url='https://github.com/aormazabal/plone.recipe.filestorage',
+      download_url='https://github.com/aormazabal/plone.recipe.filestorage/archive/refs/tags/0.7.tar.gz',
       license='ZPL',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['plone', 'plone.recipe'],
