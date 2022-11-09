@@ -10,7 +10,7 @@ def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
 
 
-version = '0.7.0'
+version = '0.7.2'
 
 long_description = (
         'Detailed Documentation\n'
@@ -35,7 +35,7 @@ tests_require = ['zope.testing', 'manuel']
 
 setup(name='plone.recipe.filestorage',
       version=version,
-      description="Clone from collective.recipe.filestorage with Python 3 Support"
+      description="Clone from collective.recipe.filestorage with Python 3 Support. "
                   "This recipe aids the creation and management of multiple Zope 5 filestorages.",
       long_description=long_description,
       classifiers=[
@@ -49,8 +49,10 @@ setup(name='plone.recipe.filestorage',
           'License :: OSI Approved :: Zope Public License',
       ],
       keywords='buildout zope zeo zodb mountpoint filestorage',
-      author='Albert Ormazabal',
-      author_email='aormazabal@tda.ad',
+      author='David Glick',
+      author_email='david.glick@plone.org',
+      maintainer='Albert Ormazabal',
+      maintainer_email='aormazabal@tda.ad',
       url='https://github.com/aormazabal/plone.recipe.filestorage',
       download_url='https://github.com/aormazabal/plone.recipe.filestorage/archive/refs/tags/0.7.tar.gz',
       license='ZPL',
