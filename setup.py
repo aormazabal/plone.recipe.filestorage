@@ -35,7 +35,8 @@ tests_require = ['zope.testing', 'manuel']
 
 setup(name='plone.recipe.filestorage',
       version=version,
-      description="This recipe aids the creation and management of multiple Zope 5 filestorages.",
+      description="Clone from collective.recipe.filestorage with Python 3 Support"
+                  "This recipe aids the creation and management of multiple Zope 5 filestorages.",
       long_description=long_description,
       classifiers=[
           'Framework :: Buildout',
